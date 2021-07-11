@@ -1,24 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:table_calendar/table_calendar.dart';
-import 'package:cleaningapp/ColorScheme.dart';
-class CalendarPage extends StatelessWidget {
+import 'package:cleaningapp/constant/ColorScheme.dart';
+
+class CalendarPage extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: calendarPage(),
-      theme: ThemeData(
-        fontFamily: 'ubuntu'
-      ),
-    );
-  }
-}
-class calendarPage extends StatefulWidget {
-  @override
-  _calendarPageState createState() => _calendarPageState();
+  _CalendarPageState createState() => _CalendarPageState();
 }
 
-class _calendarPageState extends State<calendarPage> {
+class _CalendarPageState extends State<CalendarPage> {
   CalendarController _calendarController;
   @override
   void initState() {
