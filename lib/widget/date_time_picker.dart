@@ -71,8 +71,6 @@ class _DateTimePickerState extends State<DateTimePicker> {
     //     [hh, ':', nn, " ", am]).toString();
 
     _timeController.text = "Choose Time";
-
-    // widget.setDateTime(_dateController.text,_timeController.text);
     super.initState();
   }
 

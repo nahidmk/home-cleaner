@@ -1,5 +1,6 @@
-import 'package:cleaningapp/MainPage.dart';
+import 'package:cleaningapp/screen/MainPage.dart';
 import 'package:cleaningapp/constant/ColorScheme.dart';
+import 'package:cleaningapp/screen/scheduler_list_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -62,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 GestureDetector(
-                  onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (_)=>MainPage())),
+                  onTap: ()=>Navigator.push(context, MaterialPageRoute(builder: (_)=>SchedulerListScreen())),
                   child: Container(
                     height: ScreenHeight*0.1,
                     width: MediaQuery.of(context).size.width*.5,

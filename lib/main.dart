@@ -2,7 +2,7 @@ import 'package:cleaningapp/screen/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cleaningapp/constant/ColorScheme.dart';
-import 'MainPage.dart';
+import 'screen/MainPage.dart';
 void main() {
   runApp(MyApp());
 }

@@ -3,7 +3,7 @@ import 'package:cleaningapp/widget/selected_cleaning.dart';
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 import 'package:cleaningapp/constant/ColorScheme.dart';
-import 'package:cleaningapp/CalendarPage.dart';
+import 'package:cleaningapp/screen/CalendarPage.dart';
 
 class MainPage extends StatelessWidget {
   @override
@@ -307,7 +307,11 @@ class _mainPageState extends State<mainPage> {
 
                           Center(
                             child: GestureDetector(
-                              onTap: ShowData,
+                              onTap: (){
+                                ShowData();
+                                Navigator.pop(context);
+
+                              },
                               child: Container(
                                 width: ScreenWidth*0.4,
                                 height: ScreenHeight*0.07,
