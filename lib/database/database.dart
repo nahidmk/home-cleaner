@@ -61,7 +61,7 @@ class SQLiteDbProvider {
   }
 
 
-  insert(Cleaning cleaning) async {
+  insertCleaning(Cleaning cleaning) async {
     final db = await database;
     var maxIdResult = await db.rawQuery("SELECT MAX(id)+1 as last_inserted_id FROM Cleaning");
     var id = maxIdResult.first["last_inserted_id"];
@@ -75,7 +75,7 @@ class SQLiteDbProvider {
   }
 
 
-  update(Cleaning cleaning) async {
+  updateCleaning(Cleaning cleaning) async {
     final db = await database;
     var result = await db.update(
         "Cleaning", cleaning.toMap(), where: "id = ?", whereArgs: [cleaning.id]
@@ -84,7 +84,7 @@ class SQLiteDbProvider {
   }
 
 
-  delete(int id) async {
+  deleteCleaning(int id) async {
     final db = await database;
     db.delete("Cleaning", where: "id = ?", whereArgs: [id]);
   }

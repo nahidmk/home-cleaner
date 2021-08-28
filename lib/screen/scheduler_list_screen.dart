@@ -42,7 +42,7 @@ class _SchedulerListScreenState extends State<SchedulerListScreen> {
         title: Text('Work List',style: TextStyle(fontSize: 20,),),
         backgroundColor: Colors.transparent,
       ),
-      body: isLoading?CupertinoActivityIndicator():
+      body: isLoading?Center(child: CupertinoActivityIndicator()):
           Container(
             height: MediaQuery.of(context).size.height,
 
